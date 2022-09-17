@@ -1,0 +1,24 @@
+<div style="height:40px;">
+  <button  mat-raised-button (click)="drawer.toggle()"><mat-icon>list</mat-icon></button>
+</div>
+<mat-drawer-container class="parent-container" >
+  
+  <mat-drawer #drawer mode="side">
+    
+    <mat-list role="list">
+      <mat-list-item role="listitem" routerLink="/home">Home</mat-list-item>
+      <mat-list-item role="listitem" routerLink="/dashboard">Dashboard</mat-list-item>
+      <mat-list-item role="listitem" routerLink="/space-allocation">Space allocation</mat-list-item>
+    </mat-list>
+
+  </mat-drawer>
+  
+  <mat-drawer-content>
+    
+    <router-outlet>
+    
+    </router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
+
+

@@ -1,0 +1,19 @@
+.parent-container {
+    width: 100%;
+    height: 93%;
+  }
+  
+  mat-drawer {
+    width: 150px;
+  }
+
+  mat-drawer-content {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .child-container {
+    
+  }
