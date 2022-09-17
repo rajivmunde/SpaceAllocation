@@ -1,24 +1,31 @@
-<div style="height:40px;">
-  <button  mat-raised-button (click)="drawer.toggle()"><mat-icon>list</mat-icon></button>
+<div style="height: 100%;">
+  <nav class="header-container">
+    <table style="width: 100%;">
+      <tr>
+        <td width="5%"><button mat-raised-button (click)="drawer.toggle()">
+            <mat-icon>list</mat-icon>
+          </button> </td>
+        <td width="95%" style="text-align: center;">
+          <h1 style="margin: 0px;">Central Space Allocation Management</h1>
+        </td>
+      </tr>
+    </table>
+    <span>
+    </span>
+  </nav>
+  <mat-drawer-container class="parent-container">
+    <mat-drawer #drawer mode="side">
+      <mat-list role="list">
+        <mat-list-item role="listitem" routerLink="/home">Home</mat-list-item>
+        <mat-list-item role="listitem" routerLink="/dashboard">Dashboard</mat-list-item>
+        <mat-list-item role="listitem" routerLink="/space-allocation">Space allocation</mat-list-item>
+      </mat-list>
+    </mat-drawer>
+
+    <mat-drawer-content style="overflow: hidden;">
+
+      <router-outlet>
+      </router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
 </div>
-<mat-drawer-container class="parent-container" >
-  
-  <mat-drawer #drawer mode="side">
-    
-    <mat-list role="list">
-      <mat-list-item role="listitem" routerLink="/home">Home</mat-list-item>
-      <mat-list-item role="listitem" routerLink="/dashboard">Dashboard</mat-list-item>
-      <mat-list-item role="listitem" routerLink="/space-allocation">Space allocation</mat-list-item>
-    </mat-list>
-
-  </mat-drawer>
-  
-  <mat-drawer-content>
-    
-    <router-outlet>
-    
-    </router-outlet>
-  </mat-drawer-content>
-</mat-drawer-container>
-
-
