@@ -13,13 +13,15 @@ import {MatCardModule} from '@angular/material/card';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SpaceAllocationComponent } from './space-allocation/space-allocation.component';
 import { HomeComponent } from './home/home.component';
+import { TreeSpaceAllocationComponent } from './tree-space-allocation/tree-space-allocation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     SpaceAllocationComponent,
-    HomeComponent
+    HomeComponent,
+    TreeSpaceAllocationComponent
   ],
   imports: [
     BrowserModule,

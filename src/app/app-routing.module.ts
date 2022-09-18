@@ -4,11 +4,13 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { SpaceAllocationComponent } from './space-allocation/space-allocation.component';
+import { TreeSpaceAllocationComponent } from './tree-space-allocation/tree-space-allocation.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'space-allocation', component: SpaceAllocationComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'tree-view', component: TreeSpaceAllocationComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
